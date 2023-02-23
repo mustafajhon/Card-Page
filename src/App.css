@@ -21,6 +21,7 @@ header {
 }
 ul {
   display: flex;
+
   gap: 22px;
 }
 
@@ -53,7 +54,4 @@ h2 {
 #Img {
   width: 100px;
   border-radius: 20px;
-}
-p {
-  display: inline;
 }

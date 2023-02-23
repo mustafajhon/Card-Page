@@ -46,8 +46,6 @@ function App() {
         <div className="Img">
           <img id="Img" src={Img} alt="Image" />
         </div>
-
-        <a href="">www</a>
       </div>
     </>
   );
