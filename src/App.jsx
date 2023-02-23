@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-
+import Img from "./Img.png";
 function App() {
   const [count, setCount] = useState(0);
   const [num, setNum] = useState(0);
@@ -42,9 +42,12 @@ function App() {
       </header>
       <div className="container">
         <h2>JavaScript</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        </p>
+        <hr />
+        <div className="Img">
+          <img id="Img" src={Img} alt="Image" />
+        </div>
+
+        <a href="">www</a>
       </div>
     </>
   );
