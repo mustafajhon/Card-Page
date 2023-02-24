@@ -1,19 +1,26 @@
 import "./App.css";
 import { useState } from "react";
 import Img from "./Img.png";
+import Home from "./Components/home/Home";
 function App() {
   const [num, setNum] = useState(0);
+
+  const [name, setName] = useState("Mustafa Naiby");
 
   function ResetHandler() {
     setNum((Prenum) => (Prenum = 0));
   }
 
   function IncreaseHandler() {
-    setNum((befor) => befor + 1);
+    setNum((deacrea) => deacrea + 1);
   }
 
   function DecreaseHandler() {
     setNum((befor) => befor - 1);
+  }
+
+  function changeName() {
+    setName((lame) => "Mustafa John");
   }
   return (
     <>
@@ -40,7 +47,7 @@ function App() {
         </ul>
       </header>
       <div className="container">
-        <h2>JavaScript</h2>
+        <h2>React(Js)</h2>
         <hr />
         <div className="Img">
           <img id="Img" src={Img} alt="Image" />
@@ -53,7 +60,7 @@ function App() {
         </div>
         <div className="row">
           <div className="col-md-5">
-            <h1>Mustafa John</h1>
+            <h1 onMouseMove={changeName}>{name}</h1>
             <span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae animi inventore suscipit adipisci. Dolor ducimus
@@ -63,6 +70,10 @@ function App() {
           </div>
         </div>
       </div>
+      <hr />
+
+      <Home button="Click" />
+      <Home button="Submit" />
     </>
   );
 }
