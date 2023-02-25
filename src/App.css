@@ -43,7 +43,9 @@ h2 {
   height: 600px;
   color: black;
 }
-
+.home {
+  background-color: darkslategrey;
+}
 .btn {
   text-align: center;
   background-color: aquamarine;

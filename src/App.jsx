@@ -73,7 +73,6 @@ function App() {
       <hr />
 
       <Home button="Click" />
-      <Home button="Submit" />
     </>
   );
 }
