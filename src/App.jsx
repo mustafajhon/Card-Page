@@ -72,7 +72,7 @@ function App() {
       </div>
       <hr />
 
-      <Home button="Click" />
+      <Home />
     </>
   );
 }
